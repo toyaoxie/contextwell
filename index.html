@@ -5,7 +5,7 @@
   <title>ContextWell Lab – Human-centered AI oversight & well-being capacity building</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-        content="ContextWell Lab is a research-led framework and prototype lab exploring how AI can strengthen human judgment, clarity, and emotional stability.">
+        content="ContextWell Lab is a research-led framework and prototype lab exploring how well-being capacity can be strengthened in individuals and organizations.">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html { scroll-behavior: smooth; }
@@ -19,6 +19,36 @@
         0 20px 25px -5px rgba(16, 185, 129, 0.12),
         0 10px 10px -5px rgba(15, 23, 42, 0.6);
     }
+    .audience-card {
+        background-color: #1e293b; /* slate-800 */
+        border: 1px solid #334155; /* slate-700 */
+        border-radius: 0.5rem;
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    .audience-card h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #f8fafc; /* slate-50 */
+    }
+    .audience-card p {
+        font-size: 0.875rem;
+        color: #94a3b8; /* slate-400 */
+    }
+    .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .tag-item {
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        background-color: #0f172a; /* slate-900 */
+        border: 1px solid #334155; /* slate-700 */
+        font-size: 0.75rem;
+        color: #e2e8f0; /* slate-200 */
+    }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100">
@@ -27,13 +57,13 @@
     <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
       <a href="./" class="text-xl font-bold text-emerald-400">ContextWell Lab</a>
       <div class="flex flex-wrap items-center gap-6 text-sm">
+        <!-- UPDATED NAVIGATION -->
         <a href="./" class="text-slate-100 font-medium hover:text-emerald-400">Overview</a>
-        <a href="frameworks/" class="text-slate-300 hover:text-emerald-400">Frameworks</a>
-        <a href="builder/" class="text-slate-300 hover:text-emerald-400">Prototype</a>
-        <a href="library/" class="text-slate-300 hover:text-emerald-400">Library</a>
-        <a href="for-organisations/" class="text-slate-300 hover:text-emerald-400">For organisations</a>
-        <a href="impact/" class="text-slate-300 hover:text-emerald-400">Impact</a>
         <a href="about/" class="text-slate-300 hover:text-emerald-400">About</a>
+        <a href="frameworks/" class="text-slate-300 hover:text-emerald-400">Work</a>
+        <a href="builder/" class="text-slate-300 hover:text-emerald-400">Solutions</a>
+        <a href="library/" class="text-slate-300 hover:text-emerald-400">Library</a>
+        <a href="for-organisations/" class="text-slate-300 hover:text-emerald-400">Collaborate</a>
       </div>
     </nav>
   </header>
@@ -42,75 +72,87 @@
     <!-- Hero Section -->
     <section class="max-w-5xl mx-auto mb-16">
       <p class="inline-block mb-4 px-4 py-1 rounded-full border border-slate-800 bg-slate-900 text-xs text-slate-300">
-        Research-led • Early-stage lab
+        Research led • Early stage lab
       </p>
       <!-- UPDATED HEADING -->
       <h1 class="text-4xl md:text-5xl font-bold mb-4">
-        ContextWell Lab: Advancing AI, oversight, and well-being as human capacities
+        Designing the architectures of well-being in human systems
       </h1>
       <!-- UPDATED SUBHEADING -->
       <p class="text-lg text-slate-300 mb-6 max-w-3xl">
-        A research-led lab developing systems that turn oversight and well-being into scalable, trainable human capacities for real-world AI environments.
+        ContextWell Lab creates conceptual models and tailored solutions that strengthen well-being capacity in individuals, teams, and organisational environments.
       </p>
-      <!-- REMOVED BUTTONS -->
       <div class="flex flex-wrap gap-4 mb-6">
-        <!-- Buttons removed here -->
+        <!-- Buttons remain removed -->
       </div>
     </section>
 
-    <!-- What ContextWell Is -->
+    <!-- What ContextWell Is - UPDATED -->
     <section class="max-w-4xl mx-auto mb-16">
       <h2 class="text-xl font-semibold mb-3">What ContextWell Lab is</h2>
       <p class="text-slate-300 text-sm mb-2">
-        ContextWell Lab is a research-led space that connects conceptual work on well-being and oversight with lightweight prototypes.
+        ContextWell Lab is a research led environment dedicated to discovering and shaping new possibilities for well-being in human systems.
       </p>
       <p class="text-slate-300 text-sm mb-2">
-        Oversight is not a checkbox. It is a human capacity shaped by context and well-being.
+        It explores how well-being capacity emerges from context and how it can be strengthened through conceptual models, tailored solutions, and applied experimentation.
       </p>
       <p class="text-slate-400 text-xs">
-        The aim is to make this capacity visible, trainable, and transferable.
+        This work spans individual experience, team dynamics, organisational environments, and broader social or technology mediated systems.
       </p>
     </section>
 
-    <!-- Three Pillars -->
+    <!-- Three Pillars - SIMPLIFIED AND UPDATED -->
     <section class="max-w-6xl mx-auto mb-16">
-      <h2 class="text-xl font-semibold mb-4">Three pillars of ContextWell Lab</h2>
+      <h2 class="text-xl font-semibold mb-4">Three Pillars of ContextWell Lab</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Pillar 1: Foundations and Theory (Simplified from the long version) -->
         <a href="frameworks/" class="card-hover block bg-slate-900 border border-slate-800 rounded-xl p-6">
-          <p class="text-xs uppercase tracking-wide text-emerald-400 mb-2">Pillar 1</p>
-          <h3 class="text-lg font-semibold mb-2">Frameworks</h3>
-          <p class="text-slate-400 text-sm">
-            Core models that describe contextual well-being, oversight as a capacity, and how these interact with AI systems.
+          <p class="text-xs uppercase tracking-wide text-emerald-400 mb-2">Foundations and Theory</p>
+          <h3 class="text-lg font-semibold mb-2">Structured frameworks explaining how well-being capacity functions across people, organisations, and environments.</h3>
+          <p class="text-slate-400 text-sm mt-3">
+            This pillar provides the conceptual structure that guides everything we build.
           </p>
         </a>
+
+        <!-- Pillar 2: Translation and Practice (Simplified from the long version) -->
         <a href="builder/" class="card-hover block bg-slate-900 border border-slate-800 rounded-xl p-6">
-          <p class="text-xs uppercase tracking-wide text-emerald-400 mb-2">Pillar 2</p>
-          <h3 class="text-lg font-semibold mb-2">Prototype</h3>
-          <p class="text-slate-400 text-sm">
-            A scenario-based prototype where users practise oversight and well-being skills in AI-mediated situations.
+          <p class="text-xs uppercase tracking-wide text-emerald-400 mb-2">Translation and Practice</p>
+          <h3 class="text-lg font-semibold mb-2">Context specific solutions that build well-being capacity in real settings, supported by design, prototyping, and applied research.</h3>
+          <p class="text-slate-400 text-sm mt-3">
+            This is the continuous process that turns theory into usable forms and tests ideas in real-world complexity.
           </p>
         </a>
+
+        <!-- Pillar 3: Evidence and Continuity (Simplified from the long version) -->
         <a href="library/" class="card-hover block bg-slate-900 border border-slate-800 rounded-xl p-6">
-          <p class="text-xs uppercase tracking-wide text-emerald-400 mb-2">Pillar 3</p>
-          <h3 class="text-lg font-semibold mb-2">Documentation</h3>
-          <p class="text-slate-400 text-sm">
-            Whitepapers, diagrams, and references that document the models, design choices, and pilot learnings.
+          <p class="text-xs uppercase tracking-wide text-emerald-400 mb-2">Evidence and Continuity</p>
+          <h3 class="text-lg font-semibold mb-2">Evaluation, insights, and long term learning that demonstrate impact and guide sustainable development.</h3>
+          <p class="text-slate-400 text-sm mt-3">
+            This generates the body of knowledge created through pilots and research outputs that ensure the system evolves with each cycle.
           </p>
         </a>
       </div>
     </section>
 
-    <!-- Who this is for -->
+    <!-- Who this is for - UPDATED AND SIMPLIFIED -->
     <section class="max-w-6xl mx-auto mb-12">
       <h2 class="text-xl font-semibold mb-3">Who this is for</h2>
+      
       <p class="text-slate-300 text-sm mb-6 max-w-3xl">
-        ContextWell Lab is designed for teams and people who sit at the intersection of AI, care, and responsibility.
+        ContextWell supports organisations that want to build well-being as a core human capacity across their teams.
+        <br>
+        It offers structured systems that strengthen clarity, emotional stability, and decision making under pressure and complexity.
       </p>
-      <div class="flex flex-wrap gap-3 text-xs">
-        <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-200">AI labs</span>
-        <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-200">Safety & governance teams</span>
-        <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-200">Mental health & education orgs</span>
-        <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-200">Researchers & practitioners</span>
+
+      <!-- Display audience list as simplified tags, integrating key audiences -->
+      <div class="tag-list">
+        <span class="tag-item">People and Culture teams</span>
+        <span class="tag-item">Learning and Development departments</span>
+        <span class="tag-item">Healthcare, education, and care organisations</span>
+        <span class="tag-item">Leadership and management groups</span>
+        <span class="tag-item">Innovation and strategy teams</span>
+        <span class="tag-item">Professional training providers and consultants</span>
       </div>
     </section>
   </main>
