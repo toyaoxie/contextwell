@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Forest / 留林 – ContextWell Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Forest / 留林 is an art and ecological archive exploring how encounters with forests can shape attention, memory and human relationships with place." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100">
+  <div id="site-header"></div>
+
+  <main class="pt-32 pb-24 px-6">
+    <section class="max-w-4xl mx-auto mb-20">
+      <p class="text-xs uppercase tracking-[0.28em] text-emerald-400 mb-5">Experiment &amp; Initiative</p>
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight tracking-tight mb-6">Forest / 留林</h1>
+      <p class="text-xl md:text-2xl text-slate-300 max-w-3xl leading-relaxed">
+        An art and ecological archive exploring how we see, remember and relate to the forests around us.
+      </p>
+    </section>
+
+    <section class="max-w-3xl mx-auto mb-20">
+      <div class="border-l-2 border-emerald-400 pl-6">
+        <p class="text-2xl md:text-3xl font-semibold leading-relaxed">
+          If the forest disappeared, what would you keep?
+        </p>
+        <p class="text-slate-400 mt-3">如果森林消失，你想留下什么？</p>
+      </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto grid gap-12 md:grid-cols-2 mb-24">
+      <div>
+        <p class="text-xs uppercase tracking-wide text-emerald-400 mb-3">The idea</p>
+        <p class="text-slate-300 leading-7">
+          Forest / 留林 begins in Xishuangbanna, where forests are part of everyday life, ecological systems and local memory. The project uses photography, painting and Chinese calligraphy to turn encounters with forest into a small, evolving archive.
+        </p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-wide text-emerald-400 mb-3">The space</p>
+        <p class="text-slate-300 leading-7">
+          The first works will be created through repeated visits to natural spaces and exhibited in an everyday setting rather than a conventional gallery. A small family rice-noodle restaurant in Jinghong becomes a point of encounter between forest, art and daily life.
+        </p>
+      </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto mb-24">
+      <p class="text-xs uppercase tracking-wide text-emerald-400 mb-3">A living archive</p>
+      <h2 class="text-2xl md:text-3xl font-bold mb-8">From forest to everyday life, and back again.</h2>
+      <div class="grid gap-3 md:grid-cols-5">
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <p class="font-semibold mb-2">See</p>
+          <p class="text-sm text-slate-400">Observe a place closely.</p>
+        </div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <p class="font-semibold mb-2">Interpret</p>
+          <p class="text-sm text-slate-400">Translate experience through art.</p>
+        </div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <p class="font-semibold mb-2">Encounter</p>
+          <p class="text-sm text-slate-400">Bring the forest into everyday space.</p>
+        </div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <p class="font-semibold mb-2">Reflect</p>
+          <p class="text-sm text-slate-400">Invite people to remember and respond.</p>
+        </div>
+        <div class="rounded-xl border border-slate-800 bg-slate-900 p-5">
+          <p class="font-semibold mb-2">Return</p>
+          <p class="text-sm text-slate-400">Carry attention back to the place.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto mb-24">
+      <p class="text-xs uppercase tracking-wide text-emerald-400 mb-3">First edition</p>
+      <h2 class="text-2xl md:text-3xl font-bold mb-5">01 — What Would You Keep?</h2>
+      <p class="text-slate-300 leading-7 mb-8">
+        The first edition follows two siblings into the forests and natural spaces around Jinghong. Photography records what is seen. Oil painting interprets what is felt. Calligraphy asks what deserves to be remembered. The works remain on view in the family restaurant as a small, continuing exhibition and archive.
+      </p>
+      <div class="rounded-xl border border-slate-800 bg-slate-900 p-6">
+        <p class="text-slate-300 leading-7">
+          The project is not intended to speak for conservation science. It creates a cultural and spatial interface through which scientific knowledge, local memory, personal attention and everyday encounters may meet.
+        </p>
+      </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto">
+      <p class="text-xs uppercase tracking-wide text-emerald-400 mb-3">What it may become</p>
+      <h2 class="text-2xl md:text-3xl font-bold mb-5">A small experiment with room to grow.</h2>
+      <p class="text-slate-300 leading-7">
+        Forest / 留林 is deliberately starting small. Over time, the archive may develop through new field sites, artists, community contributions, exhibitions, collectors and conservation partners. Its direction will be shaped by what the encounters make possible.
+      </p>
+    </section>
+
+    <section class="max-w-3xl mx-auto mt-16 pt-8 border-t border-slate-800">
+      <a href="/contextwell/engagement/experiments-initiatives/" class="text-sm text-emerald-400 hover:text-emerald-300">← Back to Experiments &amp; Initiatives</a>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script>
+    (function () {
+      const BASE = "/contextwell";
+      async function inject(el, url) {
+        if (!el) return;
+        try {
+          const res = await fetch(url, { cache: "no-store" });
+          if (!res.ok) throw new Error("Failed to load: " + url);
+          el.innerHTML = await res.text();
+        } catch (e) { console.warn(e); }
+      }
+      function boot() {
+        inject(document.getElementById("site-header"), BASE + "/partials/header.html");
+        inject(document.getElementById("site-footer"), BASE + "/partials/footer.html");
+      }
+      document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", boot) : boot();
+    })();
+  </script>
+</body>
+</html>
