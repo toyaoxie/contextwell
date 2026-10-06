@@ -4,72 +4,123 @@
   <meta charset="UTF-8" />
   <title>Public Engagement – ContextWell Lab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Public Engagement at ContextWell Lab: public-facing initiatives, participation pathways, and ways to shape emerging research, including #AutonomousEvolution." />
+  <meta name="description" content="Ways to participate in ContextWell Lab through public initiatives, emerging research, conversation, and collaboration." />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; }
-    .card-hover { transition: all 0.3s ease; }
+    .card-hover { transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
     .card-hover:hover {
       transform: translateY(-4px);
-      box-shadow:
-        0 20px 25px -5px rgba(16, 185, 129, 0.12),
-        0 10px 10px -5px rgba(15, 23, 42, 0.6);
+      border-color: rgba(52,211,153,0.35);
+      box-shadow: 0 20px 35px -15px rgba(0,0,0,0.55);
     }
-    .dd-open [data-dd-panel] { opacity: 1 !important; visibility: visible !important; }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100">
   <div id="site-header"></div>
 
-  <main class="max-w-6xl mx-auto px-6 pt-28 pb-16">
-    <section class="mb-14 max-w-3xl">
-      <p class="text-xs uppercase tracking-wide text-emerald-400 mb-3">ContextWell Lab</p>
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">Public Engagement</h1>
-      <p class="text-lg text-slate-300">
-        Public-facing initiatives and participation pathways for people who want to explore, discuss, and help shape ContextWell Lab's work.
+  <main class="pt-32 pb-24 px-6">
+    <section class="max-w-5xl mx-auto mb-24">
+      <p class="text-xs uppercase tracking-[0.28em] text-emerald-400 mb-5">ContextWell Lab</p>
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-7 max-w-4xl">
+        Public Engagement
+      </h1>
+      <p class="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-3xl">
+        The work does not end with the research.
+      </p>
+      <p class="text-slate-500 leading-7 max-w-2xl mt-6">
+        Public engagement is where ideas are tested through participation, conversation, creative practice and collaboration.
       </p>
     </section>
 
-    <!-- Experiments & Initiatives pointer -->
-    <section class="mb-16">
-      <h2 class="text-xl font-semibold mb-4">Public Initiatives</h2>
-      <a href="/contextwell/engagement/experiments-initiatives/" class="card-hover block bg-slate-900 border border-slate-800 rounded-xl p-6">
-        <p class="text-xs uppercase tracking-wide text-emerald-400 mb-2">Experiments &amp; Initiatives</p>
-        <h3 class="text-lg font-semibold mb-2">Explore our public experiments →</h3>
-        <p class="text-slate-400 text-sm">
-          Named public-facing initiatives, including #AutonomousEvolution.
-        </p>
-      </a>
-    </section>
-
-    <!-- Emerging Projects pathway -->
-    <section class="mb-16 rounded-xl border border-slate-800 bg-slate-900 p-6 md:p-8">
-      <p class="text-xs uppercase tracking-wide text-emerald-400 mb-2">Help Shape Our Work</p>
-      <h2 class="text-2xl font-semibold mb-3">Get involved with Emerging Projects</h2>
-      <p class="max-w-3xl text-sm text-slate-300 mb-5">
-        ContextWell Lab's Emerging Projects are early-stage ideas that develop through public interest, feedback, expertise, and collaboration. Explore current opportunities and let us know how you would like to contribute.
-      </p>
-      <a href="/contextwell/research/projects/#emerging" class="inline-flex rounded-lg bg-emerald-400 px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-emerald-300">
-        Explore Emerging Projects →
-      </a>
-    </section>
-
-    <!-- Follow / social -->
-    <section class="mb-4">
-      <h2 class="text-xl font-semibold mb-4">Follow ContextWell Lab</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <a href="https://www.youtube.com/@wellcontext" target="_blank" rel="noopener"
-           class="card-hover block bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-emerald-400">
-          <p class="text-xs uppercase tracking-wide text-emerald-400 mb-2">Video</p>
-          <h3 class="text-lg font-semibold">YouTube · @wellcontext</h3>
+    <section class="max-w-5xl mx-auto mb-24">
+      <div class="grid gap-6 md:grid-cols-2">
+        <a href="/contextwell/engagement/experiments-initiatives/" class="card-hover group block bg-slate-900 border border-slate-800 rounded-2xl p-7 md:p-8">
+          <div class="flex items-center justify-between gap-4 mb-10">
+            <span class="text-xs uppercase tracking-[0.2em] text-emerald-400">Participate</span>
+            <span class="text-xs text-slate-600">01</span>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4 group-hover:text-emerald-300 transition-colors">
+            Experiments &amp; Initiatives
+          </h2>
+          <p class="text-slate-300 leading-7 mb-8">
+            Join small public experiments that turn questions about people, places, technology and systems into real-world encounters.
+          </p>
+          <span class="text-sm text-emerald-400">Explore the work →</span>
         </a>
-        <a href="https://www.instagram.com/contextwelllab/" target="_blank" rel="noopener"
-           class="card-hover block bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-emerald-400">
-          <p class="text-xs uppercase tracking-wide text-emerald-400 mb-2">Community</p>
-          <h3 class="text-lg font-semibold">Instagram · @contextwelllab</h3>
+
+        <a href="/contextwell/research/projects/#emerging" class="card-hover group block bg-slate-900 border border-slate-800 rounded-2xl p-7 md:p-8">
+          <div class="flex items-center justify-between gap-4 mb-10">
+            <span class="text-xs uppercase tracking-[0.2em] text-emerald-400">Shape the research</span>
+            <span class="text-xs text-slate-600">02</span>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4 group-hover:text-emerald-300 transition-colors">
+            Emerging Projects
+          </h2>
+          <p class="text-slate-300 leading-7 mb-8">
+            Early-stage ideas that can develop through public interest, lived experience, expertise and collaboration.
+          </p>
+          <span class="text-sm text-emerald-400">See emerging work →</span>
         </a>
       </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto mb-24">
+      <div class="border-t border-slate-800 pt-10">
+        <div class="max-w-2xl mb-10">
+          <p class="text-xs uppercase tracking-[0.2em] text-emerald-400 mb-3">How to engage</p>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4">There is no single way to take part.</h2>
+          <p class="text-slate-400 leading-7">
+            You can participate in an experiment, respond to an emerging idea, share an experience, start a conversation, or explore a collaboration.
+          </p>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-3">
+          <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-6">
+            <p class="text-sm font-semibold mb-2">Participate</p>
+            <p class="text-sm text-slate-500 leading-6">Enter a public experiment and contribute your perspective.</p>
+          </div>
+          <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-6">
+            <p class="text-sm font-semibold mb-2">Contribute</p>
+            <p class="text-sm text-slate-500 leading-6">Bring knowledge, experience, critique or a question to the work.</p>
+          </div>
+          <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-6">
+            <p class="text-sm font-semibold mb-2">Collaborate</p>
+            <p class="text-sm text-slate-500 leading-6">Explore a project, partnership or new line of inquiry together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto mb-24">
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 md:p-10">
+        <p class="text-xs uppercase tracking-[0.2em] text-emerald-400 mb-4">Stay connected</p>
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+          <div class="max-w-2xl">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-3">Follow the work as it develops.</h2>
+            <p class="text-slate-400 leading-7">
+              Public notes, experiments and new work are shared through ContextWell Lab's channels.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a href="https://www.youtube.com/@wellcontext" target="_blank" rel="noopener"
+               class="inline-flex items-center rounded-lg border border-slate-700 px-4 py-2 text-sm text-slate-300 hover:border-emerald-400 hover:text-emerald-300">
+              YouTube
+            </a>
+            <a href="https://www.instagram.com/contextwelllab/" target="_blank" rel="noopener"
+               class="inline-flex items-center rounded-lg border border-slate-700 px-4 py-2 text-sm text-slate-300 hover:border-emerald-400 hover:text-emerald-300">
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto">
+      <a href="/contextwell/engagement/" class="inline-flex items-center text-sm text-emerald-400 hover:text-emerald-300">
+        ← Back to Engagement
+      </a>
     </section>
   </main>
 
@@ -89,18 +140,9 @@
         }
       }
       function boot() {
-        inject(document.getElementById("site-header"), `${BASE}/partials/header.html`);
-        inject(document.getElementById("site-footer"), `${BASE}/partials/footer.html`);
+        inject(document.getElementById("site-header"), BASE + "/partials/header.html");
+        inject(document.getElementById("site-footer"), BASE + "/partials/footer.html");
       }
-      document.addEventListener("click", function (event) {
-        const toggle = event.target.closest("#nav-toggle");
-        if (!toggle) return;
-        const panel = document.getElementById("site-nav");
-        if (!panel) return;
-        const isOpen = !panel.classList.contains("hidden");
-        panel.classList.toggle("hidden");
-        toggle.setAttribute("aria-expanded", String(!isOpen));
-      });
       document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", boot) : boot();
     })();
   </script>
