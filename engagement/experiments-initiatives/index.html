@@ -4,49 +4,92 @@
   <meta charset="UTF-8" />
   <title>Experiments &amp; Initiatives – ContextWell Lab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Named public-facing experiments and initiatives from ContextWell Lab, including #AutonomousEvolution." />
+  <meta name="description" content="Public experiments and initiatives from ContextWell Lab exploring how people, places, technologies and systems shape human experience." />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif; }
-    .card-hover { transition: all 0.3s ease; }
-    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(16,185,129,0.12), 0 10px 10px -5px rgba(15,23,42,0.6); }
-    .dd-open [data-dd-panel] { opacity: 1 !important; visibility: visible !important; }
+    .card-hover { transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); border-color: rgba(52,211,153,0.35); box-shadow: 0 20px 35px -15px rgba(0,0,0,0.55); }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100">
   <div id="site-header"></div>
 
-  <main class="pt-28 pb-16 px-6 max-w-5xl mx-auto">
-    <section class="mb-10 max-w-3xl">
-      <p class="text-xs uppercase tracking-wide text-emerald-400 mb-3">Engagement</p>
-      <h1 class="text-3xl md:text-4xl font-bold mb-4">Experiments &amp; Initiatives</h1>
-      <p class="text-slate-300 text-sm">
-        Named, public-facing initiatives — distinct from formal research projects — that invite
-        broad participation.
+  <main class="pt-32 pb-24 px-6">
+    <section class="max-w-5xl mx-auto mb-24">
+      <p class="text-xs uppercase tracking-[0.28em] text-emerald-400 mb-5">ContextWell Lab</p>
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-7 max-w-4xl">
+        Experiments &amp; Initiatives
+      </h1>
+      <p class="text-xl md:text-2xl text-slate-300 leading-relaxed max-w-3xl">
+        Small public experiments for exploring ideas in the real world.
+      </p>
+      <p class="text-slate-500 leading-7 max-w-2xl mt-6">
+        These projects sit between research, practice and public life. They are ways of testing
+        how ideas behave when they leave the page and enter everyday spaces.
       </p>
     </section>
 
-    <section class="space-y-4 mb-10">
-      <a href="/contextwell/engagement/experiments-initiatives/autonomous-evolution/" class="card-hover block bg-slate-900 border border-slate-800 rounded-xl p-6 max-w-3xl">
-        <p class="text-xs uppercase tracking-wide text-emerald-400 mb-2">Public Initiative</p>
-        <h2 class="text-lg font-semibold mb-2">#AutonomousEvolution</h2>
-        <p class="text-slate-400 text-sm">
-          A shared recognition of conscious participation in a world shaped by design.
-        </p>
-      </a>
+    <section class="max-w-5xl mx-auto mb-24">
+      <div class="grid gap-6 md:grid-cols-2">
+        <a href="/contextwell/engagement/experiments-initiatives/autonomous-evolution/" class="card-hover group block bg-slate-900 border border-slate-800 rounded-2xl p-7 md:p-8">
+          <div class="flex items-center justify-between gap-4 mb-10">
+            <span class="text-xs uppercase tracking-[0.2em] text-emerald-400">Public Initiative</span>
+            <span class="text-xs text-slate-600">01</span>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4 group-hover:text-emerald-300 transition-colors">
+            #AutonomousEvolution
+          </h2>
+          <p class="text-slate-300 leading-7 mb-8">
+            A public initiative exploring conscious participation in a world increasingly shaped by design, technology and systems.
+          </p>
+          <p class="text-sm text-slate-500">Participation · Awareness · Agency</p>
+        </a>
 
-      <a href="/contextwell/engagement/experiments-initiatives/forest/" class="card-hover block bg-slate-900 border border-slate-800 rounded-xl p-6 max-w-3xl">
-        <p class="text-xs uppercase tracking-wide text-emerald-400 mb-2">Art &amp; Ecological Initiative</p>
-        <h2 class="text-lg font-semibold mb-2">Forest / 留林</h2>
-        <p class="text-slate-400 text-sm">
-          An art and ecological archive exploring how we see, remember and relate to the forests around us.
-        </p>
-      </a>
+        <a href="/contextwell/engagement/experiments-initiatives/forest/" class="card-hover group block bg-slate-900 border border-slate-800 rounded-2xl p-7 md:p-8">
+          <div class="flex items-center justify-between gap-4 mb-10">
+            <span class="text-xs uppercase tracking-[0.2em] text-emerald-400">Art &amp; Ecological Experiment</span>
+            <span class="text-xs text-slate-600">02</span>
+          </div>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4 group-hover:text-emerald-300 transition-colors">
+            Forest / 留林
+          </h2>
+          <p class="text-slate-300 leading-7 mb-8">
+            An art and ecological archive exploring how place, attention and creative practice shape what we notice and what we choose to care about.
+          </p>
+          <p class="text-sm text-slate-500">Place · Attention · Memory</p>
+        </a>
+      </div>
     </section>
 
-    <section class="max-w-3xl">
-      <a href="/contextwell/engagement/" class="inline-flex items-center text-sm text-emerald-400 hover:text-emerald-300">← Back to Engagement</a>
+    <section class="max-w-5xl mx-auto mb-24">
+      <div class="border-t border-slate-800 pt-10 grid gap-10 md:grid-cols-3">
+        <div>
+          <p class="text-xs uppercase tracking-[0.2em] text-emerald-400 mb-3">Why experiments</p>
+          <p class="text-slate-400 leading-7">
+            Some questions cannot be answered by observation alone. We learn by building small situations, entering them and seeing what happens.
+          </p>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-[0.2em] text-emerald-400 mb-3">What they share</p>
+          <p class="text-slate-400 leading-7">
+            Each initiative starts with a question, creates a real-world encounter and leaves traces that can inform what comes next.
+          </p>
+        </div>
+        <div>
+          <p class="text-xs uppercase tracking-[0.2em] text-emerald-400 mb-3">Where they go</p>
+          <p class="text-slate-400 leading-7">
+            An experiment may remain small. It may also grow into a method, archive, collaboration or new line of inquiry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto">
+      <a href="/contextwell/engagement/" class="inline-flex items-center text-sm text-emerald-400 hover:text-emerald-300">
+        ← Back to Engagement
+      </a>
     </section>
   </main>
 
